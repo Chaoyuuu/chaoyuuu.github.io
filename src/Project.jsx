@@ -19,6 +19,10 @@ function Project() {
                         <span className="tech-badge">PostgreSQL</span>
                         <span className="tech-badge">Docker</span>
                     </div>
+                    {/*<div className="project-links">*/}
+                    {/*    <a href="#" className="project-link" title="GitHub">🔗</a>*/}
+                    {/*    <a href="#" className="project-link" title="Live Demo">↗</a>*/}
+                    {/*</div>*/}
                 </div>
 
                 <div className="project-card">
@@ -34,21 +38,6 @@ function Project() {
                         <span className="tech-badge">FastAPI</span>
                         <span className="tech-badge">MongoDB</span>
                         <span className="tech-badge">Chart.js</span>
-                    </div>
-                </div>
-
-                <div className="project-card">
-                    <h3 className="project-title">OpenAPI Generator</h3>
-                    <p className="project-desc">
-                        Open-source CLI tool that automatically generates API documentation and client libraries from
-                        code annotations.
-                        Supports multiple languages and frameworks, with 5K+ stars on GitHub.
-                    </p>
-                    <div className="project-tech">
-                        <span className="tech-badge">Node.js</span>
-                        <span className="tech-badge">Commander.js</span>
-                        <span className="tech-badge">Handlebars</span>
-                        <span className="tech-badge">OpenAPI</span>
                     </div>
                 </div>
             </section>

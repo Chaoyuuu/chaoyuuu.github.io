@@ -342,32 +342,68 @@ h1 {
 }
 
 .project-card {
-  background: #F8F9FA;
+  background: var(--bg-card);
   border-radius: 24px;
   padding: 40px;
   margin-bottom: 30px;
   transition: all 0.3s;
-  border: 2px solid transparent;
+  border: 2px solid var(--border-color);
 }
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 40px var(--shadow-color);
+  border-color: var(--border-subtle);
 }
 
-.project-card:nth-child(1):hover { border-color: #4285F4; }
-.project-card:nth-child(2):hover { border-color: #EA4335; }
-.project-card:nth-child(3):hover { border-color: #34A853; }
+.project-card:nth-child(1):hover {
+  box-shadow: 0 12px 40px rgba(96, 165, 250, 0.2);
+  border-color: rgba(96, 165, 250, 0.5);
+}
+.project-card:nth-child(2):hover {
+  box-shadow: 0 12px 40px rgba(167, 139, 250, 0.2);
+  border-color: rgba(167, 139, 250, 0.5);
+}
+.project-card:nth-child(3):hover {
+  box-shadow: 0 12px 40px rgba(34, 211, 238, 0.2);
+  border-color: rgba(34, 211, 238, 0.5);
+}
+
+/*.project-card:nth-child(1):hover { border-color: #4285F4; }*/
+/*.project-card:nth-child(2):hover { border-color: #EA4335; }*/
+/*.project-card:nth-child(3):hover { border-color: #34A853; }*/
+.project-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.2s;
+  font-size: 18px;
+}
+
+.project-link:hover {
+  background: var(--gradient-1);
+  color: white;
+  border-color: var(--gradient-1);
+  transform: scale(1.1);
+}
+
 
 .project-title {
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 12px;
-  color: #202124;
+  color: var(--text-primary);
 }
 
 .project-desc {
-  color: #5f6368;
+  color: var(--text-secondary);
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.7;
@@ -381,11 +417,19 @@ h1 {
 
 .tech-badge {
   padding: 6px 16px;
-  background: white;
+  background: var(--bg-secondary);
   border-radius: 16px;
   font-size: 13px;
   font-weight: 500;
-  color: #5f6368;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+  transition: all 0.2s;
+}
+
+.tech-badge:hover {
+  background: var(--border-subtle);
+  color: var(--text-primary);
+  border-color: var(--gradient-1);
 }
 /*.projects {*/
 /*  margin-bottom: 100px;*/

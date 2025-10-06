@@ -8,6 +8,10 @@ function Home() {
             </header>
 
             <section className="bio">
+                <div className="profile-image">
+                    <div className="profile-image-placeholder">👨‍💻</div>
+                    {/*Replace with: <img src="your-selfie.jpg" alt="Alex Chen" style="width: 100%; height: 100%; object-fit: cover;">*/}
+                </div>
                 <p>
                     I'm a passionate software engineer specializing in building elegant, scalable web applications.
                     With 6+ years of experience, I love transforming complex problems into intuitive digital

@@ -1,4 +1,4 @@
-function AboutMe() {
+function Experience() {
 
     return (
         <>
@@ -56,4 +56,4 @@ function AboutMe() {
     )
 }
 
-export default AboutMe
+export default Experience
